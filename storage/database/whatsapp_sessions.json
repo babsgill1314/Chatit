@@ -1,0 +1,19 @@
+[
+  {
+    "id": "sess_demo_store_mw6hl9od",
+    "user_id": "demo_store",
+    "phone_number": "+2349121798657",
+    "auth_method": "PAIRING_CODE",
+    "connection_status": "INITIALIZING",
+    "created_at": "2026-11-07T14:16:27.709Z",
+    "updated_at": "2026-11-07T16:29:21.932Z",
+    "storage_path": "/app/applet/storage/sessions/demo_store",
+    "last_disconnect_reason": null,
+    "last_disconnect_category": null,
+    "reconnect_attempts": 0,
+    "last_active_at": "2026-11-07T15:04:59.117Z",
+    "pairing_code": "7J8K-MMT7",
+    "pairing_expires_at": "2026-11-07T16:32:21.928Z",
+    "qr_expires_at": null
+  }
+]

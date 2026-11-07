@@ -1,0 +1,54 @@
+// Prisma Schema for Multi-Tenant WhatsApp Automation Store SaaS
+// File: src/db/schema.prisma
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum AuthMethod {
+  QR
+  PAIRING_CODE
+}
+
+enum ConnectionStatus {
+  INITIALIZING
+  CONNECTED
+  DISCONNECTED
+}
+
+enum DisconnectCategory {
+  TRANSIENT_DROPOUT
+  HARD_LOGOUT
+  USER_REQUESTED
+  UNKNOWN
+}
+
+model WhatsAppSession {
+  id                String           @id @default(uuid())
+  user_id           String           @unique @map("user_id")
+  phone_number      String?          @map("phone_number")
+  auth_method       AuthMethod       @default(QR) @map("auth_method")
+  connection_status ConnectionStatus @default(INITIALIZING) @map("connection_status")
+  created_at        DateTime         @default(now()) @map("created_at")
+  updated_at        DateTime         @updatedAt @map("updated_at")
+
+  // Production operational diagnostics
+  storage_path      String           @map("storage_path")
+  last_disconnect_reason String?     @map("last_disconnect_reason")
+  last_disconnect_category DisconnectCategory? @map("last_disconnect_category")
+  reconnect_attempts Int             @default(0) @map("reconnect_attempts")
+  last_active_at    DateTime?        @map("last_active_at")
+  pairing_code      String?          @map("pairing_code")
+  pairing_expires_at DateTime?       @map("pairing_expires_at")
+  qr_expires_at     DateTime?        @map("qr_expires_at")
+
+  @@index([user_id])
+  @@index([connection_status])
+  @@index([phone_number])
+  @@map("whatsapp_sessions")
+}

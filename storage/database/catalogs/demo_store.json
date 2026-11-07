@@ -1,0 +1,214 @@
+{
+  "storeName": "AURA Store & Tools",
+  "products": [
+    {
+      "id": "prod_linen_01",
+      "name": "Artisanal Linen Overshirt",
+      "category": "Apparel",
+      "price": 118,
+      "stock": 14,
+      "description": "Tailored relaxed-fit 100% Normandy flax linen with natural mother-of-pearl buttons. Breathable, pre-washed for soft drape.",
+      "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=800&q=80",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Oat Sand",
+        "Chalk White"
+      ],
+      "productType": "physical"
+    },
+    {
+      "id": "prod_weekender_02",
+      "name": "Full-Grain Cognac Leather Weekender",
+      "category": "Leather Goods",
+      "price": 285,
+      "stock": 7,
+      "description": "Handcrafted vegetable-tanned Italian leather with solid brass hardware, reinforced base, and detachable shoulder strap.",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "sizes": [
+        "One Size (45L)"
+      ],
+      "colors": [
+        "Cognac Brown",
+        "Dark Espresso"
+      ],
+      "productType": "physical"
+    },
+    {
+      "id": "prod_sneakers_03",
+      "name": "Minimalist Chalk Low-Top Sneakers",
+      "category": "Footwear",
+      "price": 165,
+      "stock": 18,
+      "description": "Buttery calfskin leather upper paired with durable Margom rubber sole and memory-foam arch support insoles.",
+      "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=800&q=80",
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "colors": [
+        "Chalk White",
+        "Monochrome Gray"
+      ],
+      "productType": "physical"
+    },
+    {
+      "id": "prod_cashmere_04",
+      "name": "Charcoal Ribbed Cashmere Crewneck",
+      "category": "Apparel",
+      "price": 195,
+      "stock": 9,
+      "description": "100% Mongolian 2-ply grade-A cashmere knit with saddle shoulder construction and rib-knit cuffs.",
+      "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "colors": [
+        "Charcoal Melange",
+        "Deep Navy"
+      ],
+      "productType": "physical"
+    },
+    {
+      "id": "prod_lookbook_digital",
+      "name": "Atelier Capsule Lookbook & Masterclass",
+      "category": "Digital Guides",
+      "price": 29,
+      "stock": 999,
+      "description": "Complete 84-page wardrobe capsule architecture guide (PDF) + 4K video masterclass. Delivered directly to your email instantly upon verified payment.",
+      "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+      "sizes": [
+        "Digital Access (PDF + Video)"
+      ],
+      "colors": [
+        "Direct Email Delivery"
+      ],
+      "productType": "digital",
+      "digitalFileUrl": "https://storage.googleapis.com/omnichat-digital-assets/atelier_capsule_masterclass_v3.pdf",
+      "digitalDownloadNotes": "Includes high-res PDF download, video access link, and seasonal updates."
+    }
+  ],
+  "settings": {
+    "storeName": "AURA Store & Tools",
+    "storeTagline": "Curated menswear, footwear & handcrafted leather",
+    "industry": "fashion",
+    "persona": "Luxury Boutique Stylist",
+    "autoReplyGreeting": true,
+    "welcomeMessage": "Hello and welcome to AURA Atelier! ✨ Browse our new arrivals catalog below, ask about fabric & sizing, or tap View Cart anytime.",
+    "operatingHours": "Daily 09:00 - 21:00 PST (AI Stylist 24/7)",
+    "currency": "USD",
+    "currencySymbol": "$",
+    "freeShippingThreshold": 150,
+    "defaultShippingFee": 12,
+    "activeDiscountCode": "AURA10",
+    "discountPercentage": 10,
+    "autoSendTrackingUpdates": true,
+    "allowCashOnDelivery": true,
+    "ownerName": "Root Administrator",
+    "contactEmail": "admin@omnichat.ai",
+    "contactPhone": "+1 (415) 892-4410",
+    "storeAddress": "1240 Geary Blvd, San Francisco, CA 94109",
+    "payoutBank": "Paystack Settlement / Standard Chartered",
+    "payoutAccountNumber": "0129482019",
+    "payoutAccountName": "AURA Atelier LLC",
+    "payoutCryptoWallet": "TYDzsY8fFq2G2mYf6yXzUu3k5v4Hj2qP",
+    "merchantGateways": {
+      "paypal": {
+        "enabled": true,
+        "mode": "live",
+        "clientId": "AeA1Y3Bn992_PPL_8830194827",
+        "clientSecret": "EL48201_SEC_994201948201",
+        "webhookId": "WH-8902819024",
+        "currency": "USD",
+        "verified": true
+      },
+      "stripe": {
+        "enabled": true,
+        "testMode": false,
+        "publishableKey": "demo_stripe_pub_key",
+        "secretKey": "demo_stripe_sec_key",
+        "webhookSecret": "whsec_demo_hash_example",
+        "enableApplePay": true,
+        "verified": true
+      },
+      "paystack": {
+        "enabled": true,
+        "testMode": false,
+        "publicKey": "demo_paystack_pub_key",
+        "secretKey": "demo_paystack_sec_key",
+        "currency": "NGN",
+        "verified": true
+      },
+      "flutterwave": {
+        "enabled": true,
+        "testMode": false,
+        "publicKey": "FLWPUBK_LIVE-882948201984-X",
+        "secretKey": "FLWSECK_LIVE-192048201984-X",
+        "encryptionKey": "FLWSECK_382019482019",
+        "currency": "USD",
+        "verified": true
+      },
+      "bankTransfer": {
+        "enabled": true,
+        "bankName": "Standard Chartered Bank",
+        "accountName": "AURA Atelier LLC",
+        "accountNumber": "0129482019",
+        "routingOrSwift": "SCBLUS33XXX",
+        "bankAddress": "1240 Geary Blvd, San Francisco, CA 94109",
+        "instructions": "Please include your WhatsApp Order Number as the transfer memo. Your order will be confirmed immediately once payment clears.",
+        "requireProofUpload": true,
+        "verified": true
+      },
+      "crypto": {
+        "enabled": true,
+        "provider": "DirectWallet",
+        "usdtTrc20Address": "TYDzsY8fFq2G2mYf6yXzUu3k5v4Hj2qP",
+        "usdtErc20Address": "0x71C8491049281749201948201948201948201948",
+        "btcAddress": "bc1q98201948201948201948201948201948201948",
+        "solAddress": "8Yq2mP8492019482019482019482019482019482019",
+        "instantConfirmation": true,
+        "verified": true
+      }
+    },
+    "connectionEngine": "meta_cloud_waba",
+    "evolutionConfig": {
+      "instanceName": "evolution_ng_instance",
+      "serverUrl": "https://api.evolution-server.net",
+      "apiKey": "B6D711FCDE4D4FD59365441E00E105DC",
+      "webhookUrl": "https://ais-dev-lmwkdqxzmtvt53bkdoqhpm-763361010399.europe-west2.run.app/api/webhooks/whatsapp",
+      "status": "disconnected",
+      "phoneConnected": "",
+      "pushName": "",
+      "pairingCode": "",
+      "batteryPercentage": 0,
+      "engineVersion": "Evolution API v2.2.0 (Baileys v6.7.9)",
+      "lastPingMs": 0,
+      "syncEvents": {
+        "messagesUpsert": true,
+        "connectionUpdate": true,
+        "qrcodeUpdated": true
+      }
+    },
+    "whatsappPhoneNumber": "+2349121798657",
+    "whatsappVerifiedName": "",
+    "whatsappConnected": true,
+    "metaWabaId": "",
+    "metaPhoneNumberId": "",
+    "metaAccessToken": "",
+    "autoSyncCatalog": false,
+    "planTier": "enterprise",
+    "monthlyAiRepliesLimit": 50000,
+    "monthlyAiRepliesUsed": 14
+  }
+}
